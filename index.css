@@ -44,6 +44,7 @@ header h1{
     font-size: 2.5em;
     font-weight: bold;
     margin: 0;
+    height: auto;
 }
 
 header span{
@@ -65,7 +66,7 @@ header nav a{
     color: #252525;
     position: relative;
     transition: 0.3s ease;
-    margin-left: 5%;
+    padding: 0.2% 1%;
 }
 
 header nav a::before{
@@ -133,6 +134,8 @@ header nav a::after{
     font-weight: bolder;
     margin-right: 5%;
     transition: 0.3s ease;
+    border: none;
+    outline: none;
 }
 
 #home #home-text .buttons a{
@@ -510,6 +513,10 @@ footer span{
         padding: 0%;
     }
 
+    header.active{
+        box-shadow: none;
+    }
+
     header h1{
         text-align: center;
         padding: 0.5em;
@@ -518,6 +525,7 @@ footer span{
     header nav{
         justify-content: center;
         background-color: var(--gray);
+        font-size: 70%;
     }
 
     #home{
@@ -526,5 +534,45 @@ footer span{
 
     #home img{
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    html{
+        font-size: 90%;
+    }
+
+    header h1{
+        font-size: x-large;
+    }
+
+    header nav a{
+        font-size: medium;
+        padding: 1  ;
+    }
+
+    /* Stylowanie #home */
+    #home img{
+        margin-top: 4%;
+    }
+
+    #home #home-text .buttons{
+        font-size:  small;
+    }
+
+    #home #home-text .buttons button#cv{
+        font-size: x-small;
+    }
+
+    /* Stylowanie #projects */
+
+    #projects{
+        font-size: small;
+    }
+
+    /* Stylowanie #contact */
+
+    #contact ul{
+        font-size: small;
     }
 }
