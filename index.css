@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --light: #fff6ff;
+    --gray: #e9e9e9;
+    --dark-grey: #d9d9d9;
+    --text: #252525;
+    --dark: #382a47;
+}
+
+
+/* Stylowanie body */
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #252525;
+    background-color: var(--light);
+}
+
+
+/* Stylowanie nagłówka */
+header{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding: 0.5em 2%;
+    z-index: 1;
+    background-color: var(--light);
+    transition: 0.3s ease;
+}
+
+header.active{
+    box-shadow: 0px 2px 10px var(--dark-grey);
+    transition: 0.3s ease;
+}
+
+header h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+header span{
+    font-weight: lighter;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    font-size: 90%;
+}
+
+header nav a{
+    width: auto;
+    font-size: 1.7em;
+    text-decoration: none;
+    color: #252525;
+    position: relative;
+    transition: 0.3s ease;
+    margin-left: 5%;
+}
+
+header nav a::before{
+    content: " ";
+    width: 0%;
+    height: 0.2em;
+    background-color: #252525;
+    border-radius: 1em;
+    position: absolute;
+    bottom: -3%;
+    left: 47%;
+    transition: 0.3s ease-in-out;
+}
+
+header nav a::after{
+    content: " ";
+    width: 0%;
+    height: 0.2em;
+    background-color: #252525;
+    border-radius: 1em;
+    position: absolute;
+    bottom: -3%;
+    right: 47%;
+    transition: 0.3s ease;
+}
+
+
+/* Stylowanie #home */
+#home{
+    display: flex;
+    flex-direction: row;
+    margin:16% 0 20% 0;
+}
+
+#home #home-text{
+    margin-top: 10%;
+}
+#home #home-text h3{
+    font-size: 2.6em;
+    font-weight: bolder;
+}
+
+#home #home-text p{
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+#home #home-text .buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+}
+
+#home #home-text .buttons button#cv{
+    background-color: var(--dark);
+    color: var(--light);
+    border-radius: 2em;
+    width: 35%;
+    height: auto;
+    padding: 2%;
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-right: 5%;
+    transition: 0.3s ease;
+}
+
+#home #home-text .buttons a{
+    margin-right: 3%;
+    transition: 0.3s ease;
+}
+
+#home #home-text .buttons i{
+    background-color: var(--dark);
+    transition: 0.3s ease;
+    font-size: 3em;
+    color: #fff6ff;
+    border-radius: 2em;
+}
+
+#home img{
+    transform: scale(80%);
+    transition: 0.3s ease;
+}
+
+
+/* Stylowanie #projects */
+#projects{
+    margin-bottom: 15%;
+}
+
+#projects h3{
+    font-weight: bold;
+}
+
+#projects article{
+    margin: 5% 0;
+}
+
+#projects article img{
+    border-radius: 5%;
+}
+
+#projects article div p{
+    font-size: 1.5em;
+}
+
+#projects article#project-tile-first div a{
+    margin-left: 90%;
+}
+
+#projects article #con a{
+    width: 10%;
+    display: block;
+    transition: 0.3s ease;
+    margin-top: 6%;
+    text-decoration: none;
+}
+
+#projects article #con a i{
+    background-color: var(--dark);
+    transition: 0.3s ease;
+    font-size: 2.5em;
+    color: #fff6ff;
+    border-radius: 2em;
+}
+
+#project-tile-first{
+    display: flex;
+}
+
+#project-tile-first i{
+    justify-content: center;
+}
+
+
+/* Stylowanie #about */
+#about{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+
+#about article{
+    display: flex;
+    flex-direction: row;
+}
+
+#about article img{
+    transform: scale(50%);
+    margin: 0;
+    padding: 0;
+}
+
+#about article p{
+    margin-top: 10%;
+    padding: 0;
+}
+
+
+/* Stylowanie #post-scripum */
+#post-scriptum{
+    width: 100%;
+    height: auto;
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 3%;
+    padding: 1em;
+}
+
+
+/* Stylowanie #contact */
+#contact h3{
+    margin-bottom: 5%;
+}
+
+#contact article{
+    width: 40%;
+    height: auto;
+    background-color: var(--dark);
+    color: var(--light);
+    margin: 2% auto;
+    border-radius: 1em;
+}
+
+
+#contact article h3{
+    margin-top: 4%;
+    text-align: center;
+}
+
+
+#contact article#info ul{
+    padding: 0;
+    list-style-type: none;  
+}
+
+#contact article#info ul li{
+    margin-bottom: 2%;
+    font-size: 1.3em;
+}
+
+#contact article#info ul li.heading{
+    font-size: 1.5em;
+}
+
+#contact article#messange{
+    height: 500px;
+}
+
+#contact article#messange form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact article#messange form #next-to-each-other{
+    display: flex;
+    flex-direction: row;
+    border-radius: 2em;
+}
+
+#contact article#messange form input{
+    width: 100%;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    margin-bottom: 3%;
+    border:none;
+    outline: none;
+}
+
+#contact article#messange form textarea{
+    border-radius: 0.5em;
+    height: 150px;
+    min-height: 150px;
+    margin-bottom: 5%;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+}
+
+#contact article#messange form button{
+    background-color: var(--light);
+    padding: 1%;
+    border-radius: 2em;
+    margin: 0 30%;
+    transition: 0.3s ease;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+/* Stylowanie footer */
+footer{
+    background-color: var(--gray);
+    margin:5% 0 0 0;
+    padding: 1%;
+    box-shadow: 0px -5px 6px var(--dark-grey);
+}
+
+footer h3{
+    font-weight: bold;
+}
+
+footer span{
+    font-weight: lighter;
+}
+
+/* Hovery */
+@media only screen and (min-width: 800px){
+    header nav a:hover{
+        font-weight: bold;
+    }
+
+    header nav a:hover::before{
+        width: 50%;
+    }
+    
+    header nav a:hover::after{
+        width: 50%;
+    }
+
+    #home #home-text .buttons button#cv:hover{
+        transform: translateY(-5%);
+        box-shadow: -3px 3px 6px var(--gray);
+    }
+    
+    #home #home-text .buttons a:hover{
+        transform: translateY(-5%);
+    }
+
+    #home img:hover
+    {
+        transform: scale(83%);
+    }
+
+    #projects article #con a:hover{
+        transform: translateY(-5%);
+    }
+
+    #contact article#messange form button:hover{
+        transform: translateY(-5%);
+    }
+}
+
+
+
+/* Zachowania przy zmianach okna */
+@media only screen and (max-width: 1200px){
+    /* Stylowanie #projects */
+    #projects article{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #projects article img{
+        width: 70%;
+        margin: 0 auto 5% auto;
+    }
+
+    #projects article #con{
+        width: 70%;
+        margin: 0 auto 5% auto;
+    }
+
+    #projects article#project-tile-first{
+        flex-direction: column;
+    }
+
+    #projects article#project-tile-first div a{
+        margin-left: 0%;
+    }
+
+    #project article#project-tile-secound{
+        flex-direction: column;
+    }
+
+
+    /* Stylowanie #about */
+    #about article#about-tile-secound{
+        flex-direction: column-reverse;
+    }
+
+    #about article img{
+        width: 80%;
+        margin: 0 auto 5% auto;
+    }
+
+    #about article p{
+        width: 70%;
+        margin: 0 auto 5% auto;
+    }
+
+    /* Stylowanie #contact */
+    #contact{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #contact article{
+        width: 100%;
+        height: auto;
+    }
+
+    #contact article#message{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    /* #home */
+    #home{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    #home img{
+        width: 60%;
+    }
+
+    #home #home-text{
+        margin-top: 0;
+        text-align: center;
+    }
+
+     #home #home-text h3{
+        font-size: 1.7em;
+    }
+
+    #home #home-text p{
+        font-size: 1.2em;
+    }
+
+    #home #home-text .buttons{
+        margin-top: 5%;
+        justify-content: center;
+    }
+
+    #home #home-text .buttons button#cv{
+        font-size: 100%;
+        padding: 2%;
+    }
+
+    #home #home-text .buttons i{
+        font-size: 250%;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    #home #home-text h3{
+        font-size: 1.6em;
+    }
+
+    #home #home-text p{
+        font-size: 1.2em;
+    }
+
+    #home #home-text .buttons button#cv{
+        font-size: 100%;
+        padding: 2%;
+    }
+
+    #home #home-text .buttons i{
+        font-size: 250%;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    header{
+        padding: 0%;
+    }
+
+    header h1{
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    header nav{
+        justify-content: center;
+        background-color: var(--gray);
+    }
+
+    #home{
+        margin-top: 40%;
+    }
+
+    #home img{
+        width: 80%;
+    }
+}
