@@ -94,6 +94,11 @@ header nav a::after{
 }
 
 
+/* Stylowanie .container */
+.container{
+    overflow-x: hidden;
+}
+
 /* Stylowanie #home */
 #home{
     display: flex;
@@ -155,6 +160,15 @@ header nav a::after{
     transform: scale(80%);
     transition: 0.3s ease;
 }
+
+#project-tile-first{
+    transform: translate(-100%);
+}
+
+#project-tile-secound{
+    transform: translate(100%);
+}
+
 
 
 /* Stylowanie #projects */
@@ -229,6 +243,19 @@ header nav a::after{
     margin-top: 10%;
     padding: 0;
 }
+
+#about-tile-first{
+    transform: translate(100%);
+}
+
+#about-tile-secound{
+    transform: translate(-100%);
+}
+
+#about-tile-third{
+    transform: translate(100%);
+}
+
 
 
 /* Stylowanie #post-scripum */
