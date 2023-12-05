@@ -6,7 +6,7 @@
 
 :root{
     --light: #fff6ff;
-    --gray: #e9e9e9;
+    --gray: #f1f1f1;
     --dark-grey: #d9d9d9;
     --text: #252525;
     --dark: #382a47;
@@ -186,26 +186,19 @@ header nav a::after{
     font-size: 1.5em;
 }
 
-#projects article#project-tile-first div a{
-    margin-left: 90%;
-}
-
-#projects article #con a{
-    width: 10%;
+#projects article a{
     display: block;
     transition: 0.3s ease;
-    margin-top: 6%;
     text-decoration: none;
-}
-
-#projects article #con a i{
+    width: 50%;
     background-color: var(--dark);
     transition: 0.3s ease;
-    font-size: 2.5em;
+    font-size: 1.5em;
     color: #fff6ff;
     border-radius: 2em;
+    text-align: center;
+    margin: 6% auto;
 }
-
 
 
 /* Stylowanie #about */
@@ -384,7 +377,7 @@ footer span{
         transform: scale(83%);
     }
 
-    #projects article #con a:hover{
+    #projects article a:hover{
         transform: translateY(-5%);
     }
 
@@ -552,6 +545,26 @@ footer span{
     #home img{
         width: 80%;
     }
+
+    /* Projekty */
+    .section-title{
+        text-align: center;
+    }
+
+    #projects article#project-tile-first div#con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #projects article#project-tile-first div#con a{
+        width: 100%;
+    }
+
+    #projects article#project-tile-first div#con a i{
+        width: 200px;
+    }
+
 }
 
 @media only screen and (max-width: 320px){
