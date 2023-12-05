@@ -1,4 +1,5 @@
-function sticky(){
+/* Sticky header */
+window.addEventListener('scroll', function sticky(){
     let head = document.querySelector('header');
 
     if(scrollY > 0){
@@ -7,4 +8,4 @@ function sticky(){
     else{
         head.classList.remove('active');
     }
-}
+});
