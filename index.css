@@ -249,6 +249,9 @@ header nav a::after{
     padding: 1em;
 }
 
+#concact{
+    width: 100%;
+}
 
 /* Stylowanie #contact */
 #contact h3{
@@ -257,7 +260,7 @@ header nav a::after{
 }
 
 #contact article{
-    width: 40%;
+    width: 90%;
     height: auto;
     background-color: var(--dark);
     color: var(--light);
@@ -286,6 +289,8 @@ header nav a::after{
     font-size: 1.5em;
 }
 
+/* Wiadomosci */
+/* 
 #contact article#messange{
     height: 500px;
 }
@@ -331,6 +336,7 @@ header nav a::after{
     border: none;
     outline: none;
 }
+ */
 
 /* Stylowanie footer */
 footer{
