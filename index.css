@@ -5,6 +5,7 @@
 }
 
 :root{
+    --white: #ffffff;
     --light: #fff6ff;
     --gray: #f1f1f1;
     --dark-grey: #d9d9d9;
@@ -17,7 +18,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     color: #252525;
-    background-color: var(--light);
+    background-color: var(--white);
 }
 
 
@@ -134,7 +135,7 @@ header nav a::after{
     border-radius: 2em;
     width: 35%;
     height: auto;
-    padding: 2%;
+    padding: 1%;
     font-size: 1.2em;
     font-weight: bolder;
     margin-right: 5%;
@@ -143,9 +144,15 @@ header nav a::after{
     outline: none;
 }
 
-#home #home-text .buttons a{
-    margin-right: 3%;
+#home #home-text .buttons #socials-wrapper{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#home #home-text .buttons #socials-wrapper a{
     transition: 0.3s ease;
+    padding: .3em;
 }
 
 #home #home-text .buttons i{
@@ -177,7 +184,7 @@ header nav a::after{
 
 #projects article img{
     border-radius: 5%;
-    border: 1px solid var(--gray);
+    filter: drop-shadow(0px 0px 10px var(--gray));
     width: 50%;
     height: 50%;
 }
@@ -409,6 +416,16 @@ footer span{
 
     #projects article#project-tile-first{
         flex-direction: column;
+        width: 100%;
+        font-size: small;
+    }
+
+    #projects article#project-tile-first img{
+        width: 100%;
+    }
+
+    #projects article#project-tile-first p{
+        width: 100%;
     }
 
     #projects article#project-tile-first div a{
@@ -424,6 +441,7 @@ footer span{
     /* Stylowanie #about */
     #about article#about-tile-secound{
         flex-direction: column-reverse;
+
     }
 
     #about article img{
@@ -434,6 +452,7 @@ footer span{
     #about article p{
         width: 70%;
         margin: 0 auto 5% auto;
+        font-size: large;
     }
 
     /* Stylowanie #contact */
@@ -534,7 +553,7 @@ footer span{
 
     header nav{
         justify-content: center;
-        background-color: var(--gray);
+        background-color: var(--light);
         font-size: 70%;
     }
 
@@ -544,6 +563,21 @@ footer span{
 
     #home img{
         width: 80%;
+    }
+
+    
+    #home #home-text .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home #home-text .buttons button#cv{
+        margin-right: 0;
+    }
+
+    #home #home-text .buttons #socials-wrappers{
+        
+        align-items: center;
     }
 
     /* Projekty */
