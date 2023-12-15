@@ -131,7 +131,6 @@ header nav a::after{
 
 #home #home-text .buttons button#cv{
     background-color: var(--dark);
-    color: var(--light);
     border-radius: 2em;
     width: 35%;
     height: auto;
@@ -142,6 +141,11 @@ header nav a::after{
     transition: 0.3s ease;
     border: none;
     outline: none;
+}
+
+#home #home-text .buttons button#cv a{
+    text-decoration: none;
+    color: var(--light);
 }
 
 #home #home-text .buttons #socials-wrapper{
